@@ -1,0 +1,77 @@
+{
+    "3": {
+        "addValue": [
+            "Paste1"
+        ],
+        "Cut1": [
+            "Paste1",
+            "addValue"
+        ],
+        "Remove beginning1": [
+            "Cut1"
+        ],
+        "Paste1": [
+            "addValue"
+        ],
+        "Grep1": [
+            "Remove beginning1"
+        ]
+    },
+    "4": {
+        "bedtools_intersectBed": [
+            "sort1",
+            "wc_gnu"
+        ],
+        "Count1": [
+            "cat1"
+        ],
+        "cshl_uniq_tool": [
+            "Count1"
+        ],
+        "cshl_awk_tool": [
+            "cshl_uniq_tool"
+        ],
+        "addValue": [
+            "cat1"
+        ],
+        "cat1": [
+            "barchart_gnuplot"
+        ],
+        "sort1": [
+            "cshl_awk_tool"
+        ],
+        "wc_gnu": [
+            "addValue"
+        ]
+    },
+    "5": {
+        "Cut1": [
+            "Paste1"
+        ],
+        "addValue": [
+            "cat1"
+        ],
+        "cat1": [
+            "barchart_gnuplot"
+        ],
+        "Add_a_column1": [
+            "addValue"
+        ],
+        "Summary_Statistics1": [
+            "Cut1"
+        ],
+        "Filter1": [
+            "Summary_Statistics1"
+        ],
+        "Paste1": [
+            "Add_a_column1"
+        ],
+        "cshl_grep_tool": [
+            "Summary_Statistics1"
+        ],
+        "gops_coverage_1": [
+            "cshl_grep_tool",
+            "Filter1"
+        ]
+    }
+}
